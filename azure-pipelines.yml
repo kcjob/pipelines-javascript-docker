@@ -9,4 +9,5 @@ steps:
    displayName: Build an image
    inputs:
      repository: $(imageName)
-     command: build Dockerfile: app/Dockerfile
+     command: build  -t 'myImage'
+     Dockerfile: app/Dockerfile
