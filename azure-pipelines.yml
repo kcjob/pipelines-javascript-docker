@@ -13,9 +13,9 @@ steps:
      Dockerfile: app/Dockerfile
      tag: 'myImage'
 
- - task: BatchScript@1
+ - task: ShellScript@2
    displayName: Environment Variables
    inputs:
-     file: test
+     scriptPath: test.sh
 
  #- bash: echo $PATH
