@@ -4,6 +4,7 @@ pool:
    vmImage: 'ubuntu-latest'
 variables:
    imageName: 'docker-pipeline'
+   System.Debug: true
 steps:
  - task: Docker@2
    displayName: Build an image
