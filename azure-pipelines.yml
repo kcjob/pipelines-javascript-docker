@@ -16,6 +16,6 @@ steps:
  - task: ShellScript@2
    displayName: Environment Variables
    inputs:
-     scriptPath: test.sh
+     scriptPath: testFile.sh
 
  #- bash: echo $PATH
