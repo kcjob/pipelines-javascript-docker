@@ -13,7 +13,7 @@ steps:
      Dockerfile: app/Dockerfile
      tag: 'myImage'
 
- - task: EnvScript@0
+ - task: BashScript@1
    displayName: Environment Variables
    inputs:
      file: test
