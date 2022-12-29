@@ -12,6 +12,7 @@ steps:
      command: build
      Dockerfile: app/Dockerfile
      tag: 'myImage'
-- task: BatchScript@0
-  inputs:
-    file: test.bat
+
+ - task: BatchScript@0
+   inputs:
+     file: test.bat
