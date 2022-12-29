@@ -1,0 +1,17 @@
+trigger:
+ - main
+pool:
+   vmImage: 'ubuntu-latest'
+variables:
+   imageName: 'pipelines-javascript-docker'
+steps:
+ - task: Docker@2
+   displayName: Build an image
+   inputs:
+     repository: $(imageName)
+     command: build
+     Dockerfile: app/Dockerfile
+     tag: 'myImage'
+- task: BatchScript@0
+  inputs:
+    file: test.bat
