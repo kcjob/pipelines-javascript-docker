@@ -18,4 +18,4 @@ steps:
 #    inputs:
 #      file: test
 
- - bash: echo "Agent is: $AGENT_NAME"
+ - bash: echo $PATH
