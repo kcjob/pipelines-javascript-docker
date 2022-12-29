@@ -13,9 +13,9 @@ steps:
      Dockerfile: app/Dockerfile
      tag: 'myImage'
 
-#  - task: EnvScript@1
-#    displayName: Environment Variables
-#    inputs:
-#      file: test
+ - task: EnvScript@1
+   displayName: Environment Variables
+   inputs:
+     file: test
 
- - bash: echo $PATH
+ #- bash: echo $PATH

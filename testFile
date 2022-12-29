@@ -1,4 +1,4 @@
 echo "Hello World from
-echo $AGENT_NAME"
+echo $PATH
 
 echo "Over and out."
