@@ -15,4 +15,4 @@ steps:
 
  - task: BatchScript@1
    inputs:
-     file: test.bat
+     file: test
